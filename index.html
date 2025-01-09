@@ -3,40 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <navbar>
-        <h1>
-            The Dev News
-        </h1>
+            <h1 id="header">
+                The Dev News
+            </h1> 
     </navbar>
 
     <main>
-        <article id="banner">
-            <p>opinião</p>
-            <h1>Como é ser um desenvolvedor</h1>
-            <p>By Fabio Tetsuo</p>
-        </article>
+        <div id="container-blog">
+            <article id="banner">
+                <picture>
+                    <img src="./assets/Background-section.svg" alt="">
+                </picture>
+            </article>
         
-        <section id="side-cards">
-            <h2>Posts populares</h2>
-            <div>
-                <img src="" alt="">
-                <p>Desenvolvimento atual</p>
-                <p>22 de Agosto de 2022</p>
-            </div>
-            <div> <img src="" alt="">
-                <p>GitLab vs GitHub</p>
-                <p>22 de Agosto de 2022</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Café atrapalha?</p>
-                <p>22 de Agosto de 2022</p>
-            </div>
-        </section>
-
+            <section id="side-cards">
+                <h2>Posts populares</h2>
+                <div class="side-img">
+                    <img src="./assets/side-card1.svg" alt="">
+                    <div class="side-text">
+                        <p class="title-side">Desenvolvimento atual</p>
+                        <p class="p-side">22 de Agosto de 2022</p>
+                    </div>    
+                </div>
+                <div class="side-img">
+                     <img src="./assets/side-card2.svg" alt="">
+                    <div class="side-text">
+                        <p class="title-side">GitLab vs GitHub</p>
+                        <p class="p-side">22 de Agosto de 2022</p>
+                    </div>    
+                </div>
+                <div class="side-img">
+                    <img src="./assets/side-card3.svg" alt="">
+                    <div class="side-text">
+                        <p class="title-side">Café atrapalha?</p>
+                        <p class="p-side">22 de Agosto de 2022</p>
+                    </div>    
+                </div>
+            </section>
+        </div>
         <article id="frame-1">
             <div>
             <h2>Posts mais recentes</h2>
