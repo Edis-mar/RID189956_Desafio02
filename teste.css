@@ -12,27 +12,28 @@
     font-style: normal;
 }
 
-h1,h2{
+h1, h2{
     color: #FFFFFF;
 }
-h2{
+
+h2 { 
     font-size: 1.2rem;
 }
 
 
-header{
+header {
     background-color: #02A28F;
     display: flex;
     justify-content: flex-start;
-    padding: 1% 0 1% 14%;
+    padding:  1% 0 1% 14%; /*1% padding em cima e em baixo e 14% padding a esquerda*/
 }
 
-#header-title{
+#header-title {
     font-size: 2rem;
 }
 
 
-#container{
+#container {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -40,13 +41,11 @@ header{
     margin-bottom: 50px;
 }
 
-/*MAIN*/
 
-main{
+main {
     width: 45vw;
-    background-color: blue;
+    /* background-color: blue; */
 }
-
 
 #container-blog{
     display: flex;
@@ -55,33 +54,39 @@ main{
     overflow: hidden;
     height: 50vh;
     margin-bottom: 20px;
-}
 
+}
 
 #banner{
     width: 100%;
-    display: flex; 
-    padding-top: 3rem;
+    /* display: flex; 
+     padding-top: 3rem;  */
+
 }
 
-#main-img{
+#main-img {
     background-color: pink;
     width: 100%
 }
 
 
-  #frame-1{
+
+#frame-1{
     display:flex ;
     flex-direction: column;
-    width: 90%;
-  }
+    /* width: 90%; */
+}
 
-  #frame-title{
+
+#frame-title{
     background-color: #02A28F;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding:12px 0 12px 20px;
+    justify-content: space-between;/*Coloquei esse between aqui, estava center, isso é falta de conhecimento em flexbox*/
+
+    padding: 12px 0 12px 20px;/*Ajustei padding aqui antes estava apenas com padding superior e horizontal, ajustei e tirei o gap porque n faz sentido aqui*/
+
     border-radius: 0.5rem;
     box-shadow:0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -91,26 +96,27 @@ main{
     color:#FFFFFF;
     text-decoration-line: underline;
     font-weight: 500;
-    padding-right: 1rem
+    padding-right: 1rem;
 }
 
 
 #container-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Adicionei essa linha para criar um espaço máximo entre os conteudo e colar eles nas bordas, não tinha aqui antes isso demonstra lacuna de conhecimento em flex-box, não tente alinha tudo com margin e padding*/
     flex-wrap:wrap;
-    gap: 20px;
+    gap: 1.3rem;/*so pra vc n esquecer seria melhor usar pixel, mas esse serve*/
     margin-top: 0.8rem;
-    width: 100%; 
-    background-color: red;
+    /* width: 90%; */
+    /* background-color: red; */
 }
 
 .cards{
-    width: 48%;
+    /*pra que criou essa classe então se não utiliza ela?*/
+    width: 48%; /*Colocar tamanho pra delimitar, em projeto grande os textos podem vim de qaulquer tamanho, seu design n pode quebrar se vinher texto muito grande*/
     height: 40%;
 }
 
-.banner-img{
+.banner-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +131,7 @@ main{
 .card-text{
     box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.1);
     padding: 16px;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 16px 16px; /*Desta forma apenas o canto inferior esquerdo e direito ficam com o border radius*/
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -154,19 +160,17 @@ main{
     text-align: justify;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;   /* Exibe os três pontinhos quando o texto ultrapassar do container */
 }
 
 
-/*SIDE-CONTAINER*/
-
-#side-container{
-width: 21vw;
-background-color: pink;
+#side-container {
+    width: 21vw;
+    /* background-color: pink; */
 }
 
 #side-cards{
-    height: 50vh;
+    height: 50vh;/*mesmo height do container-blog, pra eles manterem alinhados, mas tem projetos que não necessita está alinha um lado com o outro, aí vc coloca como melhor ajustar os conteudo internos de cada independente*/
     display:flex;
     flex-direction: column;
     gap: 4%;
@@ -224,7 +228,7 @@ background-color: pink;
 }
 
 
-  footer{
+footer {
     background-color: #02A28F;
     color: #FFFFFF;
     display: flex;
@@ -232,4 +236,4 @@ background-color: pink;
     padding: 1.5rem 8rem;
     font-size: 1.5rem;
     background-size: cover;
-  }
+}
