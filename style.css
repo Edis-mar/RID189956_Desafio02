@@ -36,15 +36,14 @@ header{
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-top: 1%;
+    padding-top: 4%;
     margin-bottom: 50px;
 }
 
 /*MAIN*/
 
 main{
-    width: 45vw;
-    background-color: blue;
+    width: 48vw;
 }
 
 
@@ -65,15 +64,14 @@ main{
 }
 
 #main-img{
-    background-color: pink;
-    width: 100%
+    width: 100%;
 }
 
 
   #frame-1{
     display:flex ;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   #frame-title{
@@ -101,13 +99,12 @@ main{
     flex-wrap:wrap;
     gap: 20px;
     margin-top: 0.8rem;
-    width: 100%; 
-    background-color: red;
+    width: 100%;
 }
 
 .cards{
     width: 48%;
-    height: 40%;
+    height: 61vh;
 }
 
 .banner-img{
@@ -139,7 +136,7 @@ main{
 
 .cards-title{
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .cards-subtitle{
@@ -162,7 +159,6 @@ main{
 
 #side-container{
 width: 21vw;
-background-color: pink;
 }
 
 #side-cards{
